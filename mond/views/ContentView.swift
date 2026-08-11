@@ -136,8 +136,22 @@ struct ContentView: View {
                 
                 Section {
                     PlainToggle(text: "Security Research Device UI", minSupportedVersion: 26.0, isOn: mg_key_binding(["XYlJKKkj2hztRP1NWWnhlw"]))
-                    PlainToggle(text: "Disable Region Restrictions", isOn: mg_region_restrict_binding())
-                    PlainToggle(text: "Apple Intelligence", minSupportedVersion: 18.1, isOn: mg_key_binding(["A62OafQ85EJAiiqKn4agtg"]))
+                    
+                    PlainToggle(
+                        text: "Disable Region Restrictions",
+                        infoType: .info,
+                        infoMessage: "This tweak may be broken or have no effect on some iOS versions or devices.",
+                        isOn: mg_region_restrict_binding()
+                    )
+                    
+                    PlainToggle(
+                        text: "Apple Intelligence",
+                        minSupportedVersion: 18.1,
+                        infoType: .info,
+                        infoMessage: "Apple Intelligence activation is currently broken and may not work.",
+                        isOn: mg_key_binding(["A62OafQ85EJAiiqKn4agtg"])
+                    )
+                    
                     HStack(spacing: 10) {
                         Picker("Spoofing", selection: $product_type) {
                             Text("Default").tag(machine_name())
@@ -186,6 +200,7 @@ struct ContentView: View {
                     
                     PlainToggle(text: "Allow Installing iPadOS Apps", isOn: mg_key_binding(["9MZ5AdH43csAUajl/dU+IQ"], type: [Int].self, default_val: [1], on_val: [1, 2]))
                     PlainToggle(text: "Apple Pencil Settings", isOn: mg_key_binding(["yhHcB0iH0d1XzPO/CFd3ow"]))
+                    
                     if UIDevice.current.userInterfaceIdiom == .pad {
                         PlainToggle(text: "Stage Manager", isOn: mg_key_binding(["qeaj75wk3HF4DwQ8qbIi7g"]))
                     }
