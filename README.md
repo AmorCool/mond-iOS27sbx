@@ -13,6 +13,7 @@
 
 **Planned:**<br>
 &#45; HouseArrest file browser (iOS 18 - 27?)
+&#45; Pocket Poster
 
 **Known Issues:**<br>
 &#45; Tweaks may disappear on reboot<br>
