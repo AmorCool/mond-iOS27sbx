@@ -146,9 +146,9 @@ struct ContentView: View {
                     
                     PlainToggle(
                         text: "Apple Intelligence",
-                        minSupportedVersion: 18.1,
                         infoType: .info,
                         infoMessage: "Apple Intelligence activation is currently broken and may not work.",
+                        minSupportedVersion: 18.1,
                         isOn: mg_key_binding(["A62OafQ85EJAiiqKn4agtg"])
                     )
                     
