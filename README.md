@@ -24,3 +24,5 @@
 &#45; [forcequit](https://github.com/forcequitOS) for his work on bad_query<br>
 &#45; [johnny](https://github.com/0xjohnnydev) for his work on the MCM bug class<br>
 &#45; [jailbreak.party](https://github.com/jailbreakdotparty) for PartyUI, GestaltView and the implementation of [neon](https://github.com/neonmodder123)'s respring method<br>
+
+<i>btw, you should like totally star this repo and stuff</i>
