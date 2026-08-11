@@ -53,7 +53,7 @@ func grant_mg_write() -> Int64 {
         return cmg()
     }
 
-    var path_c = TweakPaths.gestalt.utf8CString.map { Int8($0) }
+    var path_c = TweakPaths.gestalt_dir.utf8CString.map { Int8($0) }
     let handle = bad_query(&path_c, false, nil, false)
     switch handle {
         case -1:
